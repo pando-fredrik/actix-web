@@ -116,7 +116,7 @@ serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 static_assertions = "1"
 tls-openssl = { package = "openssl", version = "0.10.9" }
-tls-rustls = { package = "rustls", version = "0.20.0" }
+tls-rustls = { package = "rustls", git = "https://github.com/rustls/rustls.git", branch = "feat-ip-address", features = ["dangerous_configuration"]  }
 tokio = { version = "1.8.4", features = ["net", "rt", "macros"] }
 
 [[example]]
